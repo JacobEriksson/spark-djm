@@ -20,7 +20,7 @@ spec:
     # "spark.kubernetes.driver.annotation.admission.datadoghq.com/java-lib.version": "latest"
     # "spark.kubernetes.executor.annotation.admission.datadoghq.com/java-lib.version": "latest"
     # "spark.driver.extraJavaOptions": "-Ddd.data.jobs.enabled=true -Ddd.service=sales-analysis -Ddd.env=dev -Ddd.version=1.0"
-    # "spark.executor.extraJavaOptions": "-Ddd.data.jobs.enabled=true -Ddd.service=sales-analysis -Ddd.env=dev -Ddd.version=1.0
+    # "spark.executor.extraJavaOptions": "-Ddd.data.jobs.enabled=true -Ddd.service=sales-analysis -Ddd.env=dev -Ddd.version=1.0"
   driver:
     cores: 1
     memory: "1g"

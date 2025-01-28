@@ -43,7 +43,9 @@ docker build -t spark-py:v3.5.3-numpy .
 ```
 
 Similar to what you did before, upload the new image to your minikube cluster.
-
+```
+minikube image load spark:3.5.3-numpy
+```
 
 
 ## Let's get sparking!

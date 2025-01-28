@@ -1,0 +1,8 @@
+orderId,productId,productName,quantity,price
+1,101,DogHouse,2,50.0
+2,102,DogLeash,1,15.0
+3,101,DogHouse,1,50.0
+4,103,DogBed,3,40.0
+5,101,DogHouse,3,50.0
+6,102,DogLeash,2,15.0
+7,103,DogBed,10,40.0

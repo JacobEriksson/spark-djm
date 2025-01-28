@@ -39,7 +39,7 @@ There is a Dockerfile in this folder that does this.
 Navigate to your folder and run this command:
 
 ```
-docker build -t spark-py:v3.5.3-numpy .
+docker build -t spark:v3.5.3-numpy .
 ```
 
 Similar to what you did before, upload the new image to your minikube cluster.

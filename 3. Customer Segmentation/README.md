@@ -30,6 +30,21 @@ minikube ssh
 cd /mnt/data
 ls
 ```
+## Rebuild the image.. 
+As part of this app, we are leveraging numpy to do our calculations.. This is sadly not part of the base image, so we have to add the library manually.
+
+Let us take the quick route and just use the base image and add the library.
+There is a Dockerfile in this folder that does this.
+
+Navigate to your folder and run this command:
+
+```
+docker build -t spark-py:v3.5.3-numpy .
+```
+
+Similar to what you did before, upload the new image to your minikube cluster.
+
+
 
 ## Let's get sparking!
 Let's try to run the application, deploy it using the spark-job.yaml
@@ -39,6 +54,8 @@ kubectl apply -f /path/to/spark-job.yaml
 ```
 
 Check logs for output!
+
+
 
 
 ## Let us add Datadog Observability!

@@ -36,12 +36,12 @@ While still being logged in, create new folders that will be used for order gene
 
 Start from /mnt/data:
 ```
-mkdir orders
-mkdir processed_results
-mkdir checkpoint
-chmod -R 777 /mnt/data/orders
-chmod -R 777 /mnt/data/processed_results
-chmod -R 777 /mnt/data/checkpoint
+sudo mkdir orders
+sudo mkdir processed_results
+sudo mkdir checkpoint
+sudo chmod -R 777 /mnt/data/orders
+sudo chmod -R 777 /mnt/data/processed_results
+sudo chmod -R 777 /mnt/data/checkpoint
 ```
 
 Now we should be ready to start generating orders and our spark jobs.
@@ -52,7 +52,7 @@ First, we will have to start our order generation script, while connected to you
 ```
 minikube ssh
 cd /mnt/data
-python3 order_generation.py
+python3 order_generator.py
 ```
 
 Let this terminal continue to run, open up a new tab in your terminal or a new window and navigate to the /mnt/data/orders to verify that json files are being created.

@@ -22,7 +22,7 @@ Lets copy the files in the directory to your newly created folder
 ```
 minikube cp order_generator.py /mnt/data/order_generator.py
 minikube cp products.csv /mnt/data/products.csv
-minikube cp real_time_order_processing.csv /mnt/real_time_order_processing.py
+minikube cp real_time_order_processing.py /mnt/real_time_order_processing.py
 ```
 
 SSH in to your minikube cluster and verify that the files have been copied:
